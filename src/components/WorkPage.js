@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { DarkTheme } from "./Themes";
 import { motion } from "framer-motion";
-
+import "../components/css/style.css"
 import LogoComponent from "../subComponents/LogoComponent";
 import SocialIcons from "../subComponents/SocialIcons";
 import PowerButton from "../subComponents/PowerButton";
@@ -24,7 +24,6 @@ const Box = styled.div`
 const Main = styled(motion.ul)`
   position: fixed;
   top: 12rem;
-  left: calc(10rem + 15vw);
   height: 40vh;
   display: flex;
 
@@ -77,10 +76,12 @@ const WorkPage = () => {
     <ThemeProvider theme={DarkTheme}>
       <Box>
         <LogoComponent theme="dark" />
-        <SocialIcons theme="dark" />
-        <PowerButton />
+        <div className='socialabout'>
+<SocialIcons theme='dark' />
 
-        <Main ref={ref} variants={container} initial="hidden" animate="show">
+</div>        <PowerButton />
+
+        <Main ref={ref} variants={container} initial="hidden" animate="show" className="workflow">
           {Work.map((d) => (
             <Card key={d.id} data={d} />
           ))}

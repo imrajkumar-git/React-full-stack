@@ -1,14 +1,13 @@
 import React, { useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import { Anchor, Link } from '../components/AllSvgs'
-
+import "../components/css/style.css"
 const Container = styled.div`
 position: relative;
 `
 const Slider = styled.div`
 position: fixed;
-top: 0;
-right: 2rem;
+
 display: flex;
 justify-content: center;
 align-items: center;
@@ -24,8 +23,7 @@ transform: rotate(135deg);
 
 const PreDisplay = styled.div`
 position: absolute;
-top:0;
-right: 2rem;
+
 `
 
 
@@ -67,11 +65,11 @@ const AnchorComponent = (props) => {
 
     return (
         <Container>
-        <PreDisplay ref={hiddenRef} className='hidden'>
+        <PreDisplay ref={hiddenRef} className='hidden anchor'>
     
         <Anchor width={70} height={70} fill='currentColor'/>
     </PreDisplay>
-            <Slider ref={ref}>
+            <Slider ref={ref} className='anchor'>
                 {
                     [...Array(props.number)].map((x,id) => {
                         return <Link key={id} width={25} height={25} fill='currentColor' className="chain" />

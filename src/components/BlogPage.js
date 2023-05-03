@@ -4,7 +4,7 @@ import img from "../assets/Images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg"
 import LogoComponent from '../subComponents/LogoComponent'
 import SocialIcons  from '../subComponents/SocialIcons'
 import PowerButton  from '../subComponents/PowerButton'
-
+import '../components/css/style.css'
 import {Blogs} from '../data/BlogData';
 import BlogComponent from './BlogComponent'
 import AnchorComponent from '../subComponents/Anchor'
@@ -37,8 +37,7 @@ padding-top: 10rem;
 
 const Grid = styled.div`
 display: grid;
-grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
-grid-gap: calc(1rem + 2vw);
+
 `
 
 // Framer-motion config
@@ -78,10 +77,12 @@ const BlogPage = () => {
             <Container>
                 <LogoComponent />
                 <PowerButton />
-                <SocialIcons />
-                <AnchorComponent number={numbers}/>
+                <div className='socialabout'>
+<SocialIcons/>
+
+</div>                <AnchorComponent number={numbers}/>
 <Center>
-<Grid>
+<Grid className='blogs-grid'>
 
 {
     Blogs.map(blog => {

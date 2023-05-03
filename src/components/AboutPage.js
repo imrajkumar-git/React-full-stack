@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { keyframes, ThemeProvider } from 'styled-components'
 import {DarkTheme} from './Themes';
 
-
+import '../components/css/style.css'
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
@@ -64,7 +64,10 @@ const AboutPage = () => {
 <Box>
 
 <LogoComponent theme='dark'/>
-<SocialIcons theme='dark'/>
+<div className='socialabout'>
+<SocialIcons theme='dark' />
+
+</div>
 <PowerButton />
 <ParticleComponent theme='dark' />
 

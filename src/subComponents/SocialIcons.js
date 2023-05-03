@@ -4,6 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import { Facebook, Github, Twitter, YouTube } from "../components/AllSvgs";
 import { DarkTheme } from "../components/Themes";
+import '../components/css/style.css'
 
 const Icons = styled.div`
   display: flex;
@@ -12,7 +13,6 @@ const Icons = styled.div`
 
   position: fixed;
   bottom: 0;
-  left: 2rem;
 
   z-index: 3;
 
@@ -30,7 +30,7 @@ const Line = styled(motion.span)`
 
 const SocialIcons = (props) => {
   return (
-    <Icons>
+    <Icons className="social">
       <motion.div
         initial={{scale:0 }}
         animate={{ scale: [0, 1, 1.5, 1] }}
@@ -39,7 +39,7 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://github.com/codebucks27"}
+          href={"https://github.com/imrajkumar-git"}
         >
           <Github
             width={25}
@@ -56,7 +56,7 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://twitter.com/code_bucks"}
+          href={"https://twitter.com/Rajkumar8"}
         >
           <Twitter
             width={25}
@@ -73,7 +73,7 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://facebook.com/codebucks27"}
+          href={"https://www.facebook.com/rajkumararyal0977"}
         >
           <Facebook
             width={25}
@@ -90,7 +90,7 @@ const SocialIcons = (props) => {
         <a
           style={{ color: "inherit" }}
           target="_blank"
-          href={"https://youtube.com"}
+          href={"https://www.youtube.com/channel/UCaA0IiwSQyhMLxLTJ_YoEZw"}
         >
           <YouTube
             width={25}

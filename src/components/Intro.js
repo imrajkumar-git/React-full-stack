@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
-import Me from '../assets/Images/profile-img.png'
-
+import Me from '../assets/Images/aboutpic.png'
+import '../components/css/style.css'
 
 const Box = styled(motion.div)`
 
@@ -10,9 +10,7 @@ position: absolute;
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
-
-
-width: 65vw;
+width: 70vw;
 height:55vh;
 display: flex;
 
@@ -44,13 +42,12 @@ display: flex;
     bottom: 0;
     left: 50%;
     transform: translate(-50%,0%);
-    width: 100%;
-    height: auto;
+    // width: 100%;
 }
 `
 
 const Text = styled.div`
-font-size: calc(1em + 1.5vw);
+font-size: calc(0.1rem + 1.5vw);
 color: ${props => props.theme.body};
 padding: 2rem;
 cursor: pointer;
@@ -61,7 +58,7 @@ justify-content: space-evenly;
 
 &>*:last-child{
     color: ${props => `rgba(${props.theme.bodyRgba},0.6)` };
-    font-size: calc(0.5rem + 1.5vw);
+    font-size: calc(1rem + 0.5vw);
     font-weight:300;
 
 }
@@ -78,9 +75,9 @@ const Intro = () => {
         transition={{ type: 'spring', duration:2, delay:1 }}
         >
             <SubBox>
-                <Text>
+                <Text className='introtext'>
                     <h1>Hi,</h1>
-                    <h3>I'm CodeBucks.</h3>
+                    <h3>I'm Rajkumar Aryal.</h3>
                     <h6>I design and Code simple yet beautiful websites.</h6>
                 </Text>
             </SubBox>
