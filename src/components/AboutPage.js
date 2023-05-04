@@ -35,7 +35,7 @@ img{
 }
 `
 const Main =  styled.div`
-  border: 2px solid ${(props) => props.theme.text};
+//   border: 2px solid ${(props) => props.theme.text};
   color: ${(props) => props.theme.text};
   padding: 2rem;
   width: 50vw;
@@ -75,7 +75,7 @@ const AboutPage = () => {
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
         <Main>
-        I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
+        I'm Rajkumar Aryal a websites developer located in Nepal. I love to create simple yet beautiful websites with great user experience.
 <br /> <br/>
 I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an independent freelancer and blogger. I love to write blogs and read books.
 <br/> <br/>
