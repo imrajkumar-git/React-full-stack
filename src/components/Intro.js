@@ -80,6 +80,7 @@ const Intro = () => {
                     <h1>Hi,</h1>
                     <h3>I'm Rajkumar Aryal.</h3>
                     <h6>I design and Code simple yet beautiful websites.</h6>
+                    <h6>I am an IT professional with a passion for technology, innovation, and problem-solving. I specialize in web development, software solutions, and IT support, helping individuals and businesses build efficient and modern digital experiences.</h6>
                 </Text>
             </SubBox>
             <SubBox>
